@@ -1,47 +1,45 @@
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="Bootstrap.js"></script>
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>Aula 04 - Formulario em JS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Desenvolvimento de formulário com a tabela</h1>
+    <h1>Formulário em JavaScript</h1>
     <hr>
     <form id="linhaForm">
-        <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
         <br><br>
-        <input type="text" name="produto" id="produto" placeholder="Seu produto" required>
+        <input type="number" name="idade" id="idade" placeholder="DIgite sua idade" required>
         <br><br>
-        <input type="text" name="marca" id="marca" placeholder="A marca do produto" required>
+        <label for="admissao">Admissão</label>
         <br><br>
-        <input type="text" name="segmento" id="segmento" placeholder="O segmento" required>
+        <input type="date" name="admissao" id="admissao" required>
         <br><br>
-        <input type="number" name="valor" id="valor" placeholder="Valor do produto" required>
+        <label for="demissao">Demissão</label>
         <br><br>
-        <label for="Data de venda">Data de venda</label>
+        <input type="date" name="demissao" id="demissao">
         <br><br>
-        <input type="date" name="datadevenda" id="datadevenda">
-        <br><br>
-        <button type="button" onclick="adicionarLinha()">Click</button>
-        <br><br>
+        <button type="button" onclick="adicionarLinha()">Adicionar</button>
     </form>
     <br><br>
     <table id="tabelaDados">
         <thead>
             <tr>
+                <th>Id</th>
                 <th>Nome</th>
-                <th>Produto</th>
-                <th>Marca</th>
-                <th>Segmento</th>
-                <th>Valor</th>
-                <th>Data de venda</th>
+                <th>Idade</th>
+                <th>Admissão</th>
+                <th>Demissão</th>
             </tr>
         </thead>
         <tbody>
         </tbody>
     </table>
-    <script src="./Script.js"></script>
+    <script src="./formulario.js"></script>
 </body>
+
 </html>

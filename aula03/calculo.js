@@ -5,6 +5,4 @@ function somar (){
    document.getElementById("soma").innerHTML=res
    document.getElementById("conf-soma").innerHTML="Calculado ✔"
 
-
-
 }
